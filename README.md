@@ -28,7 +28,7 @@ To query the same testdata cayley graph in the browser, add the following JSON t
 
 See this running from a static web page [here](https://elliott5.github.io/cayleygraphiql/index.html?query=%7B%0A%20%20nodes%20%7B%0A%20%20%20%20id%0A%20%20%20%20follows%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D&variables=%7B%0A%20%20%22pouchdb%22%3A%22cayley_testdata%22%0A%7D).
 
-Whenever you provide a `"pouchdb"` database name, that database will be created in the browser if it does not exist. If that database has the name `"cayley_testdata"` then the [testdata used in the Cayley documentation](https://github.com/cayleygraph/cayley/blob/master/data/testdata.nq) will be inserted (if not already present).
+Whenever you provide a `"pouchdb"` database name, that database will be created in the browser if it does not exist. If that database has the name `"cayley_testdata"` then the [testdata used in the Cayley documentation](https://github.com/cayleygraph/cayley/blob/master/data/testdata.nq) will be inserted (if not already present). To be able to see a PouchDB database you have previously created, `static/index.html` must be served from the same domain as that created database.
 
 To see it in action on your own machine `go run example/main.go` then open your browser at the url reported.
 
